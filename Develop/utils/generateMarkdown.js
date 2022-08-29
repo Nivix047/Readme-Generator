@@ -13,7 +13,14 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// Need list of license inquirer style: Need a N/A at the very end (some people don't have license)
+function renderLicenseLink(license) {
+  if (license !== "none") {
+    return `* [License](#license)`;
+  } else {
+    return "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -25,6 +32,27 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
+  ## Description
+
+  ${data.description}
+  
+  ## Table of Contents
+  
+  * [Installation](#installation)
+  
+  * [Usage](usage)
+
+  ${renderLicenseLink(data.license)}
+  
+  * [Contributing](contributing)
+
+  * [Tests](test)
+
+  * [Questions](questions)
+
+  ## Installation
+
+  ${data.installation}
 
 `;
 }
