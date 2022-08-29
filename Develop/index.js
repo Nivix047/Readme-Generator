@@ -40,11 +40,18 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  // process cwd is the current working directory
+  // /dist prevents overwrite of the root README.md
+  return fs.writeFileSync(path.join(process.cwd(), "/dist", fileName), data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  console.log("test");
+  inquirer.prompt(questions).then((answers) => {
+    writeToFile("README.md", generateMarkdown(answers));
+    console.log("Saved: your file is in the dist folder");
+  });
 }
 
 // Function call to initialize app
