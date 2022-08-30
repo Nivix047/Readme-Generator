@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
+// library for working with directory structure
 const path = require("path");
 const inquirer = require("inquirer");
+// file systems
 const fs = require("fs");
 
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -34,12 +36,33 @@ const questions = [
   },
   {
     type: "input",
+    name: "contributing",
+    message: "How did you or did someone contribute to the project?",
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "What is your github username?",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "How does someone test the project?",
+  },
+  {
+    type: "input",
     name: "credits",
     message: "List your collaborators",
   },
 ];
 
 // TODO: Create a function to write README file
+// fileName and data gets info from line 73
 function writeToFile(fileName, data) {
   // process cwd is the current working directory
   // /dist prevents overwrite of the root README.md

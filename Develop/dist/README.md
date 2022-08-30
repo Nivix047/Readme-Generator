@@ -1,6 +1,6 @@
 # TEST
 
-  ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+  
 
   ## Description
 
@@ -12,7 +12,7 @@
   
   * [Usage](usage)
 
-  * [License](#license)
+  
   
   * [Contributing](contributing)
 
@@ -23,4 +23,24 @@
   ## Installation
 
   x
+
+  ## Usage
+
+  x
+
+  undefined
+
+  ## Contributing
+
+  x
+
+  ## Test
+
+  x
+
+  ## Questions
+
+  You can see my additional work at [x](https://github.com/x)
+
+  You can reach me at x
 
