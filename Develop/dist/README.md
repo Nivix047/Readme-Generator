@@ -1,6 +1,6 @@
-# TEST
+# Readme Generator
 
-  
+  ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
 
@@ -12,7 +12,7 @@
   
   * [Usage](usage)
 
-  
+  * [License](#license)
   
   * [Contributing](contributing)
 
@@ -28,7 +28,8 @@
 
   x
 
-  undefined
+  ## License
+  This project is licenses under the MIT license
 
   ## Contributing
 
@@ -40,7 +41,7 @@
 
   ## Questions
 
-  You can see my additional work at [x](https://github.com/x)
+  You can see my additional work at [Nivix047](https://github.com/Nivix047)
 
-  You can reach me at x
+  You can reach me at xudh47@gmail.com
 

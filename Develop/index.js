@@ -62,7 +62,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// fileName and data gets info from line 73
+// fileName and data gets info from line 75
 function writeToFile(fileName, data) {
   // process cwd is the current working directory
   // /dist prevents overwrite of the root README.md
